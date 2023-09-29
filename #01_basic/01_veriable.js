@@ -4,3 +4,4 @@ var accountPassword="12345";
 accoutCity="jaipur";
 //accountId=2;  // NOT ALLOWED
 console.log(accountId);
+console.table([accountEmail,accountId,accountPassword,accoutCity]);
