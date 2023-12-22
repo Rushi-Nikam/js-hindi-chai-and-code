@@ -32,3 +32,20 @@ console.log(typeof id);
 console.log(typeof bignumber); 
 console.log(typeof data); 
 console.log( typeof value);
+
+/* ****************************************************************** */
+// stack(primitive type) , heap(non-primitive type) two type of memory
+
+let mychannel= "rushikesh nikam";
+let anotherchannel = mychannel;
+console.log(anotherchannel);
+anotherchannel= "rushi Nikam";
+console.log(anotherchannel);
+let userone = {
+    email:"rushikesh00@gmail.com",
+    upi : "redc@gedc",
+}
+let usertwo = userone;
+usertwo.email = "rushiNikam00@gmail.com"
+console.log(userone);
+console.log(usertwo);
