@@ -9,14 +9,14 @@ console.log(anotherid);
 console.log(id === anotherid);
 const bignumber = 23456786543234n;
 console.log(typeof(bignumber));
+let value = true;
 // non-primitive datataype and reference type
-
 
 // array and objects and functions
 
 const Heros = ['IronMan','shaktiman','krish','naagraj','doga'];
 console.log(Heros);
-
+let data;
 let myobj = {
     name :'rupesh',
     age  : '12',
@@ -28,3 +28,7 @@ myfunc();
 console.log(typeof(myfunc));
 console.log(typeof myobj);
 console.log(typeof null ) // object
+console.log(typeof id); 
+console.log(typeof bignumber); 
+console.log(typeof data); 
+console.log( typeof value);
