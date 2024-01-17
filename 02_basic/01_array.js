@@ -14,6 +14,7 @@ console.log(myarr)
 // console.log(myarr);
 // console.log(myarr.includes(5));
 // console.log(myarr.indexOf(3));
+const arrym = new Array(1,2,3,4,5);
 console.log('A',myarr);
 const myn1 = myarr.slice(1,3); // is not manupulate original array 
 console.log(myn1);
