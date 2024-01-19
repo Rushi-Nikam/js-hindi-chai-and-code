@@ -10,3 +10,9 @@ var data = 40;
 }
 console.log(data);
 // console.log(data1);
+function one(){
+    const username = "rushikesh";
+    function two(){
+        const website= "youtube";
+    }
+}
