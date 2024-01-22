@@ -15,4 +15,4 @@ let score = 11;
 do {
     console.log(`The value is ${score}`);
     score++;
-} while (score <=10);
+} while (score <=9);
