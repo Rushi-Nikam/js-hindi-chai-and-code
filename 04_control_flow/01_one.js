@@ -25,3 +25,15 @@ if(userloginedfromgoogle || userloginedfromlinked){
 if(userloginedfromgoogle && userloginedfromlinked){
     console.log("allow to processed on");
 }
+//Nullish coalescing Operator(??):null , undefined
+
+// let val1= 5 ?? 10
+let val1 = null ?? 10;
+console.log( val1);
+let val2 = null ?? undefined ?? 30;
+console.log(val2);
+
+//Ternary Operator 
+// condition ? ture : false;
+let icecream = 100;
+icecream <= 80 ? console.log('less than 80'):console.log('more than 80');
