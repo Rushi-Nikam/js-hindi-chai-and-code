@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom Examples creating div </title>
+</head>
+<body style="background-color: #212121; color: white;">
+    
+</body>
+<script>
+    const div = document.createElement('div');
+    console.log(div);
+    div.className = "data";
+    // div.id= Math.round(Math.random() * 10 + 1);
+    div.id = "1";
+    div.setAttribute('title',"dom example")
+    div.style.padding = "14px";
+    div.style.backgroundColor = "orange";
+    const addtext = document.createTextNode("Rushikesh Nikam")
+    div.appendChild(addtext);
+     div.style.color = "red";
+    document.body.appendChild(div);
+
+
+
+</script>
+</html>
