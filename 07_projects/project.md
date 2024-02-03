@@ -50,6 +50,7 @@ form.addEventListener('submit', (e) => {
 });
 
 ```
+## Project 3
 ```javascript
 const clock = document.getElementById('clock');
 const dates = document.getElementById('date');
