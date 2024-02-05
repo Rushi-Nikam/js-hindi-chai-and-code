@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeout and setinterval</title>
+</head>
+<body>
+    <h2 id="texting">Code on screen</h2>
+    <button id="stop" >Stop</button>
+</body>
+<script>
+    const changing = document.querySelector('#texting');
+    const codechange = () => {
+        changing.innerHTML = `<h2>The great coder</h2>`;
+    }
+   const settime =   setTimeout( codechange,
+   2000); 
+   
+   const stop = document.querySelector('#stop').addEventListener('click',()=>{
+       
+       clearTimeout(settime);
+       console.log('stopped');
+   },false);
+    
+</script>
+</html>
