@@ -18,15 +18,19 @@
     }
 
    let contrlInterval;
- 
-   
-  let start =  document.getElementById('start').addEventListener('click',()=>{
-    contrlInterval = setInterval(saydate,1000,'hi');
-  })
-  const stop =  document.getElementById('stop').addEventListener('click',()=>{
-      clearInterval(contrlInterval);
+   function Starting(){
+    if(!contrlInterval){
+
+        contrlInterval = setInterval(saydate,1000,'hi');
+    }
+   }
+   document.getElementById('start').addEventListener('click',Starting)
+  function StopTask(){
+    clearInterval(contrlInterval);
       console.log('stopped')
-  })
+      contrlInterval = null;
+  }
+    document.getElementById('stop').addEventListener('click',StopTask)
   
 </script>
 <script>
