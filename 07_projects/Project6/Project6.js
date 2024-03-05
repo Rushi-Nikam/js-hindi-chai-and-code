@@ -1,7 +1,7 @@
 const ramdomColor = function(){
     const hex = '0123456ABCDEF';
     let Color = "#";
-    for(let i=0;i< 6;i++ ){
+    for(let i=0;i< 6;i++){
      Color += hex[Math.floor(Math.random() * 16)]
     
     }
