@@ -58,4 +58,4 @@ Teacher.__proto__=users
 //  modern syntax
 
 Object.setPrototypeOf(teachingSupport,Teacher)
-console.log(teachingSupport.makevideo)
+console.log(teachingSupport.makevideo) // is working 
