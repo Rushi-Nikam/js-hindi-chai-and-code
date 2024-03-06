@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body style="background-color: #313131;">
+    <button id="orange">Orange</button>
+    <button id="green">green</button>
+    <script>
+        // function init(){
+        //     let name = "rushikesh";
+        //     function displayName(){
+        //         console.log(name);
+        //     }
+        //     displayName();
+        // }
+        // init(); 
+
+        // Closure  
+        function makeFunc(){
+            const name = "Nikam";
+            function displayName(){
+                console.log(name);
+            }
+            return  displayName;   
+        }
+        const myFunc = makeFunc(); //if you return a function  all lexical scope are
+                                   // return  
+        myFunc();
+    </script>
+    <script>
+    //    const orange = document.getElementById('orange');
+    //    orange.addEventListener('click',(e)=>{
+    //         document.body.style.backgroundColor = "orange";
+    //    })
+    //    const green = document.getElementById('green');
+    //    green.addEventListener('click',(e)=>{
+    //         document.body.style.backgroundColor = "green";
+    //    })
+    function clickhandler(color){
+       // example of closure
+       return function(){
+            document.body.style.backgroundColor = `${color}`;
+        }
+    }
+    document.getElementById('orange').onclick = clickhandler("orange");
+    document.getElementById('green').onclick = clickhandler("green");
+    </script>
+</body>
+</html>
